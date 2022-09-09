@@ -18,6 +18,10 @@ func squareNumber(a: Int) -> Int {
     return a * a
 }
 
+func testFunc(){
+    print("Testing")
+}
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
