@@ -9,9 +9,25 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack(alignment: .leading){
+            Text("Hello, world!")
+                .font(.title)
+                .fontWeight(.black)
+                .padding()
+            HStack(){
+                Text("This is some text!")
+                    .font(.subheadline)
+                Spacer()
+                Text("More text!")
+                    .font(.subheadline)
+            }
+        }
+        .padding()
     }
+}
+
+func doNothing() -> Void {
+    
 }
 
 func squareNumber(a: Int) -> Int {
