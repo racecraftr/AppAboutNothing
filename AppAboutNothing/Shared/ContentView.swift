@@ -38,8 +38,22 @@ func testFunc(){
     print("Testing")
 }
 
+func sum(a: Int?, b: Int?) -> Int {
+    return (a ?? 0) + (b ?? 0)
+}
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+class ComplexNumber {
+    var real: Int; 
+    var imaginary: Int;
+
+    init (real: Int?, imaginary: Int?){
+        self.real = (real ?? 0)
+        self.imaginary = (imaginary ?? 0)
     }
 }
